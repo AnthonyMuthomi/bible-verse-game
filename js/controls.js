@@ -1,3 +1,4 @@
+playMusic();
 $("#sett-music-icon").click(function(){
 playClickSd();
 if(mus == 0){
