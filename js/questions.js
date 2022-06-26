@@ -101,7 +101,7 @@ currBk = dtpts[2];
 level = dtpts[3];
 favs = dtpts[4];
 currDs = 1;
-currQn = 5;
+currQn = 1;
 vrefs = [];
 vtxts = [];
 
