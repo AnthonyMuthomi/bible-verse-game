@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta lang="en"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,user-resizable=yes,shrink-to-fit=no"/>
+<title>
+Bible Verse Game
+</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./css/menu.css"/>
+<link rel="stylesheet" href="./css/one_pager.css"/>
+</head>
+
+<body>
+
+<!------>
+<audio id="bgm" controls preload="auto"  loop="infinite" controlslist="nodownload" hidden>
+<source type="audio/mp3" src="audio/bg.mp3">
+</audio>
+
+<!--audio-->
+
+<div id="dark"></div>
+<div id="menu-cont">
+<div id="close-div">
+<div id="close-push">
+<img class="iconImg" id="menu-img" src="./images/others/settings.png" style="transform: scale(0.8);margin:0 5px;"/>
+<b id="menu-title">Settings</b></div>
+<img id="close-img" src="./images/others/close.png"/>
+</div>
+<div id="slider">
+
+<div id="menu-fvvs" style="display:block"><div class="menu-item" style="flex-direction:column;" id="contactusdiv"></div></div>
+
+<div id="menu-fb" style="display:none">
+<div class="menu-item" style="flex-direction:column;" id="contactusdiv">
+<div class="fld-hld">
+<div class="exp">Share your feedback</div>
+<textarea id="fb-txt" maxlength="200" class="inp" autofill="none">
+</textarea>
+</div>
+<div class="btn-nxt" id="fb-btn">
+Send Email
+</div>
+</div>
+</div>
+
+<div id="menu-about">
+<div class="menu-item" style="flex-direction: column; align-items: flex-start; padding-left: 20px; line-height: 1.5;">
+<!--b style="margin:0; padding:0; margin:0;">App Name</b-->
+Bible Verse Game
+<br><br>
+<b style="margin:0; padding:0; margin:0;">Bible Version</b>
+King James Version
+</div>
+</div>
+
+<div id="menu-settings"></div> 
+
+<div id="menu-statistics"></div> 
+
+<div id="menu-share"></div> 
+
+</div>
+</div>
+<!------>
+
+<div id="cont">
+
+<div id="qn-txt"></div>
+
+<div id = "answer-area"></div>
+
+<div id="desc"> 
+Drag the correct-word cloud to answer 
+</div>
+
+</div>
+
+<div class="menu menu-settings">
+<img class="iconImg" id="settIcon" src="images/others/settings.png"/>
+</div>
+<div class="menu menu-stats">
+<img class="iconImg" id="statsIcon" src="images/others/stats.png"/>
+</div>
+<div class="menu menu-fs">
+<img class="iconImg" id="fsb" src="images/others/fs.png"/>
+</div>
+
+<div class="menu menu-conta" onclick="opencontact()">
+<img class="iconImg" src="images/others/email.png"/>
+</div>
+<div class="menu menu-favs">
+<img class="iconImg" onclick="playClickSd();setAllFavsText(0);" src="images/others/star.png"/>
+</div>
+<div class="menu menu-about" onclick="openabout()">
+<img class="iconImg" src="images/others/about.png"/>
+</div>
+<div class="menu menu-share" onclick="opensharemenu()" hidden>
+<img class="iconImg" src="images/others/share.png"/>
+</div>
+<div class="menu menu-rate" hidden>
+<img class="iconImg" src="images/others/rate.png"/>
+</div>
+
+
+<div class="menu menu-info">
+<!--marquee-->
+<span id="book"></span>
+<span id="level"></span>
+<span id="question"></span>
+</marquee>
+</div>
+
+<script rel="javascript" src="./js/jquery.min.js"></script>
+<script rel="javascript" src="./js/db.js"></script>
+<script rel="javascript" src="./js/menusettings.js"></script>
+<!--script rel="javascript" src="./database/db_kjv_bvg.js"></script-->
+<script rel= "javascript" src="./js/questions.js"></script>
+<script rel= "javascript" src="./js/controls.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
