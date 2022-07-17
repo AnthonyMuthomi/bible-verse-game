@@ -259,6 +259,7 @@ $("#answer-area").html(atxt);
 }
 
 loadData();
+playMusic();
 var st = dashverse(vtxts[currQn-1], keywords);
 displayQn(currQn, currDs, st);
 
