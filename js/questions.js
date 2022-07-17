@@ -259,7 +259,7 @@ $("#answer-area").html(atxt);
 }
 
 loadData();
-playMusic();
+
 var st = dashverse(vtxts[currQn-1], keywords);
 displayQn(currQn, currDs, st);
 
@@ -306,7 +306,7 @@ if(mus == "1"){
 document.getElementById("bgm").play();
 }
 }
-
+playMusic();
 var playClickSd = function(e){
 if(sd == "1"){
 var time = new Date().getTime();
