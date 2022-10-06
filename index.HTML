@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta lang="en"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,user-resizable=yes,shrink-to-fit=no"/>
+<title>
+Bible Verse Game
+</title>
+  <link rel="icon" type="image/png" href="./images/others/bg0.png"/>
+<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./css/menu.css"/>
+<link rel="stylesheet" href="./css/one_pager.css"/>
+  <script data-ad-client="ca-pub-4111847357817033" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+
+<!------>
+<audio id="bgm" controls preload="auto"  loop="infinite" controlslist="nodownload" hidden>
+<source type="audio/mp3" src="audio/bg.mp3">
+</audio>
+<!--audio-->
+
+<div id="dark"></div>
+<div id="menu-cont">
+<div id="close-div">
+<div id="close-push">
+<img class="iconImg" id="menu-img" src="./images/others/settings.png" style="transform: scale(0.8);margin:0 5px;"/>
+<b id="menu-title">Settings</b></div>
+<img id="close-img" src="./images/others/close.png"/>
+</div>
+<div id="slider">
+
+<div id="menu-fvvs" style="display:block"><div class="menu-item" style="flex-direction:column;" id="contactusdiv"></div></div>
+
+<div id="menu-fb" style="display:none">
+<div class="menu-item" style="flex-direction:column;" id="contactusdiv">
+<div class="fld-hld">
+<div class="exp">Share your feedback</div>
+<textarea id="fb-txt" maxlength="200" class="inp" autofill="none">
+</textarea>
+</div>
+<div class="btn-nxt" id="fb-btn">
+Send Email
+</div>
+</div>
+</div>
+
+<div id="menu-about">
+<div class="menu-item" style="flex-direction: column; align-items: flex-start; padding-left: 20px; line-height: 1.5;">
+<!--b style="margin:0; padding:0; margin:0;">App Name</b-->
+Bible Verse Game
+<br><br>
+<b style="margin:0; padding:0; margin:0;">Bible Version</b>
+King James Version
+</div>
+</div>
+
+<div id="menu-settings"></div> 
+
+<div id="menu-statistics"></div> 
+
+<div id="menu-share"></div> 
+
+<div id="menu-algo-vs"></div> 
+
+<div id="menu-kjv_bb_text"></div> 
+
+</div>
+</div>
+<!------>
+
+<div id="cont">
+
+<div id="border-top"></div>
+<div id="border-bottom"></div>
+<div id="border-left"></div>
+<div id="border-right"></div>
+
+<svg id="pot1" width="30" height="30">
+<path fill="white" stroke-width="0" stroke="red"d="M0,0 L30,0 30,5 27,5 24,30 6,30 3,5 0,5 Z"/>
+<path fill="gray" stroke-width="0" stroke="red"d="M0,5 L30,5 28,8 2,8 Z"/>
+</svg>
+<svg id="flower1" width="36" height="120">
+<path fill="transparent" stroke-width="5" stroke-linecap="round" stroke="brown" d="M18,120 Q25,100 18,70 10,44 18,11"/>
+<path fill="pink" stroke-width="0.4" stroke="black" d="M24,100 Q22,90 30,75 34,90 24,100 L30,75" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M20,100 Q14,80 6,80 8,94 20,100 L6,80" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M12,44 Q14,34 6,19 2,34 12,44 L6,19" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M16,44 Q18,24 28,18 28,34 16,44 L28,18" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M18,10 Q25,1 36,0 29,10 18,10 L36,0"/>
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M18,10 Q10,1 0,0 7,10 18,10 L0,0" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M18,10 Q16,5 18,0 20,5 18,10 L18,0" />
+
+</svg>
+
+
+<svg id="pot2" width="30" height="30">
+<path fill="white" stroke-width="0" stroke="red"d="M0,0 L30,0 30,5 27,5 24,30 6,30 3,5 0,5 Z"/>
+<path fill="gray" stroke-width="0" stroke="red"d="M0,5 L30,5 28,8 2,8 Z"/>
+</svg>
+<svg id="flower2" width="36" height="120">
+<path fill="transparent" stroke-width="5" stroke-linecap="round" stroke="brown" d="M18,120 Q25,100 18,70 10,44 18,11"/>
+<path fill="pink" stroke-width="0.4" stroke="black" d="M24,100 Q22,90 30,75 34,90 24,100 L30,75" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M20,100 Q14,80 6,80 8,94 20,100 L6,80" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M12,44 Q14,34 6,19 2,34 12,44 L6,19" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M16,44 Q18,24 28,18 28,34 16,44 L28,18" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M18,10 Q25,1 36,0 29,10 18,10 L36,0"/>
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M18,10 Q10,1 0,0 7,10 18,10 L0,0" />
+<path fill="pink" fill="green" stroke-width="0.4" stroke="black" d="M18,10 Q16,5 18,0 20,5 18,10 L18,0" />
+
+
+  </svg>
+
+<div id="qn-txt"></div>
+
+<div id = "answer-area"></div>
+
+<div id="desc"> 
+<marquee scrollamount="1" id="marquee1">Hold, Drag and Drop (HDD) the correct-answer cloud to the dash-cloud</marquee>
+</div>
+
+</div>
+
+<div class="menu menu-settings">
+<img class="iconImg" id="settIcon" src="images/others/settings.png"/>
+</div>
+<div class="menu menu-stats">
+<img class="iconImg" id="statsIcon" src="images/others/stats.png"/>
+</div>
+<!--div class="menu menu-fs">
+<img class="iconImg" id="fsb" onclick="playClickSd();prepFsLock()" src="images/others/fs.png"/>
+</div-->
+<div class="menu menu-favs" onclick="playClickSd();setAllFavsText(0);">
+<img class="iconImg" id="fsb" src="images/others/star.png"/>
+</div>
+<div class="menu menu-about" onclick="openabout();">
+<img class="iconImg" id="fsb" src="images/others/about.png"/>
+</div>
+
+<div class="menu menu-conta" onclick="opencontact()">
+<img class="iconImg" src="images/others/email.png"/>
+</div>
+  <div class="menu menu-share" onclick="opensharemenu()">
+
+<img class="iconImg" src="images/others/share.png"/>
+
+</div>
+<div class="menu menu-info">
+<marquee scrollamount="1" id="marquee2">
+<span id="book"></span>
+<span id="level"></span>
+<span id="question"></span>
+</marquee>
+</div>
+
+<script rel="javascript" src="./js/jquery.min.js"></script>
+<script rel="javascript" src="./js/db.js"></script>
+<script rel="javascript" src="./js/menusettings.js"></script>
+<script rel="javascript" src="./js/fullScreen.js"></script>
+<script rel= "javascript" src="./js/questions.js"></script>
+<script rel= "javascript" src="./js/controls.js"></script>
+<script rel= "javascript" src="./js/ads.js"></script>
+</body>
+
+</html>
+
+
